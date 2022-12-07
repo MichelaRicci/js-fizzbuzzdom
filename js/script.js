@@ -7,16 +7,36 @@ console.log('JS OK')
 // per i multipli di 5 stampi “Buzz” al posto del numero.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto del numero.
 
+let box = document.querySelector('.box');
 
 
 for (let i = 1; i <= 100; i++) {
 
-    if (i % 3 == 0) {
+    let number = document.createElement('div');
 
-        console.log(i);
+    number.innerHTML = i;
+
+    console.log(i);
+
+    if (i % 3 == 0) {
+        number.classList.add = "fizz";
+        number.innerHTML = "fizz";
+        
+
+    } else if (i % 5 == 0) {
+
+        number.classList.add("buzz");
+        number.innerHTML = "buzz";
+
+
+    } else if (i % 3 == 0 && i % 5 == 0) {
+
+        number.classList.add("fizzbuzz");
+        number.innerHTML = "fizzbuzz";
 
     }
-}
 
+
+}
 
 
