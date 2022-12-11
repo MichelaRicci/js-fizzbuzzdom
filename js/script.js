@@ -11,6 +11,7 @@ let box = document.getElementById('box');
 
 
 
+
 for (let i = 1; i <= 100; i++) {
 
     let number = document.createElement('div');
@@ -20,17 +21,17 @@ for (let i = 1; i <= 100; i++) {
     box.append(number);
 
 
-    if (i % 3 == 0 && i % 5 == 0) {
+    if (i % 15 === 0) {
 
         number.classList.add("fizzbuzz");
         number.innerHTML = "fizzbuzz";
 
-    } else if  (i % 3 == 0) {
-        number.classList.add = "fizz";
+    } else if  (i % 3 === 0) {
+        number.classList.add("fizz");
         number.innerHTML = "fizz";
         
 
-    } else if (i % 5 == 0) {
+    } else if (i % 5 === 0) {
 
         number.classList.add("buzz");
         number.innerHTML = "buzz";
